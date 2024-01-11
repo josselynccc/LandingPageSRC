@@ -1,9 +1,1 @@
-SASS-NODE
-1. Instalar
-    npm install -g node-SASS
-2. Ver cambios
-    node-sass -w (directorio de entrada) -o (directorio de salida.css)
-3. Colocar la ruta en package.json
-    "scss": "node-sass --watch scss -o css"
-4. Ejeutar la ruta
-    npm run scss
+
