@@ -1,0 +1,78 @@
+#contacto{
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    font-size: 30px;
+    color: $text-color;
+    text-align: center;
+    border: 0;
+    p{
+        text-align: left;
+    }
+    img{
+        width: 10%;
+    }
+
+    iframe{
+        border-radius: 10%;
+        padding: 1em;
+    }
+}
+
+.sub{
+    border-bottom: 2px solid #8a4e43;
+    padding-bottom: 3px;
+}
+.l-form-all{
+    display:block;
+
+    @include from (l){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2em;
+}
+
+}
+.l-form{
+    width: 100%;
+    text-align: center; 
+
+    input{
+        font-family: lato,sans-serif;
+        cursor: pointer;
+        border: 0;
+        outline: none;
+        background-color: #f8f3ca;
+        border-radius: 5px;
+        border-bottom: 2px solid #8e8e8e;
+    }
+    select{
+        font-family: lato,sans-serif;
+        margin-bottom: 1em;
+        cursor: pointer;
+        border: 0;
+        outline: none;
+        background-color: #f8f3ca;
+        border-radius: 5px;
+        border-bottom: 2px solid #8e8e8e;
+        transition: all 1s ease;
+    }
+
+    textarea{
+        font-family: lato,sans-serif;
+        cursor: pointer;
+        border: 0;
+        outline: none;
+        background-color: #f8f3ca;
+        border-radius: 5px;
+        border-bottom: 2px solid #8e8e8e;
+    }
+
+    button{
+        cursor: pointer;
+        color: white;
+        padding: 1em;
+        border-radius: 5px;
+        background-color: rgb(78, 194, 78);
+    }
+}

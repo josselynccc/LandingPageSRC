@@ -1,0 +1,25 @@
+.main-footer-insignia{
+    width: 100%;
+
+    .logo-footer{
+        width: 8em;
+        
+    }
+}
+
+.main-footer-content{
+    height: 18em;
+    display:block;
+    margin-top: -4em;
+    background-color: $text-color;
+
+    iframe{
+        border-radius: 20%;
+        padding: 1em;
+    }
+}
+
+iframe{
+    border-radius: 20%;
+    padding: 1em;
+}

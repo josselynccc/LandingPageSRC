@@ -1,0 +1,89 @@
+#docentes{
+    font-size: 30px;
+    padding-bottom: 1em;
+    color: $text-color;
+    text-align: center;
+}
+.carousel{
+    margin-left: 42%;
+    width: 300px;
+    height: 300px;
+    perspective: 800px;
+
+    &-content{
+        position: absolute;
+        width: 100%;
+        transform: translateZ(-500px) rotateY(0);
+        transform-style: preserve-3d;
+        animation: carousel 30s infinite cubic-bezier(1,0.015,0.295,1.125) forwards;
+    }
+    &-item{
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent);
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .info{
+            border-radius: 5px;
+            color: $text-color;
+            background-color: rgba(235, 232, 232, 0.708);
+        }
+    }
+
+    &-item1{
+        transform:rotateY(0) translateZ(500PX);
+    }
+    &-item2{
+        transform:rotateY(60deg) translateZ(500PX);
+    }
+    &-item3{
+        transform:rotateY(120deg) translateZ(500PX);
+    }
+    &-item4{
+        transform:rotateY(180deg) translateZ(500PX);
+    }
+    &-item5{
+        transform:rotateY(240deg) translateZ(500PX);
+    }
+    &-item6{
+        transform:rotateY(300deg) translateZ(500PX);
+    }
+    &-item7{
+        transform:rotateY(360deg) translateZ(500PX);
+    }
+}
+
+@keyframes carousel {
+    0%,
+    8.3%{
+        transform: translateZ(-500px) rotateY(0);
+    }
+    16.6%,
+    24.9%{
+        transform: translateZ(-500px) rotateY(-60deg);
+    }
+    33.2%,
+    41.5%{
+        transform: translateZ(-500px) rotateY(-120deg);
+    }
+    49.8%,
+    58.1%{
+        transform: translateZ(-500px) rotateY(-180deg);
+    }
+    66.4%,
+    74.7%{
+        transform: translateZ(-500px) rotateY(-240deg);
+    }
+    83%,
+    91.3%{
+        transform: translateZ(-500px) rotateY(-300deg);
+    }
+    100%{
+        transform: translateZ(-500px) rotateY(-360deg);
+    }
+}

@@ -1,0 +1,54 @@
+.main-banner{
+
+    animation-name: aparicion;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+    --padding: 2rem 1rem 2rem;
+    @include from(l){
+        --padding:5rem 1rem 5rem;
+    }
+    padding: var(--padding);
+    margin-top: $header-hight;
+    background: $border-color;
+    color: $text-color;
+    text-align: center;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 94%);
+    position: relative;
+
+    @include from-max(420px){
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    &-content{
+        position: relative;
+        
+    }
+    &-logo{
+        width: 10%;
+        display: block;
+        margin: 0 auto .5rem;
+    }
+    &-fondo{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: .4;
+    }
+}
+
+
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+        transform: scale(2) translatex(75px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translatex(0px);
+    }
+}

@@ -1,0 +1,36 @@
+#eventos{
+    padding-top: 4em;
+    font-size: 30px;
+    color: $text-color;
+    text-align: center;
+}
+
+.event{
+    display: flex;
+
+    @include from (l){
+        transition: width 50s;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1em;
+    }
+    
+}
+
+.imgs{
+    align-items: center;
+
+    img{
+        margin: 1em;
+        width: 85%;
+        border-radius: 4%;
+        @include from (l){
+            border-radius: 4%;
+        }
+    }
+}
+.imgs:hover{
+    @include from (l){
+    width: 800px;}
+}

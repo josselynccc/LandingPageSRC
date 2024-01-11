@@ -1,0 +1,52 @@
+.main-menu{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+    
+    @include from(l){
+        display: flex;
+        background-color: #f8f3ca;
+    }
+}
+.main-menu-item{
+    padding: 1rem;
+    margin-bottom: 2px;
+}
+.main-menu-link{
+    color: #f8f3ca;
+    margin-bottom: 2px;
+    @include from(l){
+        color:$text-color;
+    }
+}
+
+.main-nav{
+    position:fixed;
+    height: calc(100vh - #{$header-hight});
+    width: auto;
+    top: $header-hight;
+    right: -100vh;
+    transition: right .5s;
+    background-color: #3c3737;
+    z-index: var(--z-fixed);
+
+    @include from(l){
+        position: static;
+        background: transparent;
+        padding-top: 0;
+        height: auto;
+        width: auto;
+    }
+
+    &.show{
+        right: 0;
+    }
+}
+
+.main-menu-toggle{
+    width: 3rem;
+    @include from(l){
+        visibility: hidden;
+    }
+}
