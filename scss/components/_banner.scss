@@ -1,5 +1,5 @@
 .main-banner{
-
+    display: block;
     animation-name: aparicion;
     animation-duration: 2s;
     animation-delay: 2s;
@@ -25,7 +25,7 @@
         
     }
     &-logo{
-        width: 10%;
+        width: 15%;
         display: block;
         margin: 0 auto .5rem;
     }
@@ -38,6 +38,10 @@
         object-fit: cover;
         object-position: center;
         opacity: .4;
+    }
+
+    P{
+        font-size: 30px;
     }
 }
 

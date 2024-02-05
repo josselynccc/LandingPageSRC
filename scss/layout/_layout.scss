@@ -6,6 +6,8 @@
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
+
+    
 }
 
 .l-section{
@@ -17,6 +19,7 @@
     @include from(l){
         margin-bottom: 4rem;
     }
+
 
     &--diagonal{
         padding-top: 4em;
