@@ -9,3 +9,11 @@ const show_menu = (toggleId,navId) =>{
 }
 
 show_menu('main-menu-toggle','main-nav')
+
+
+document.addEventListener("scroll", function(){
+    const scrolly = window.scrollY
+    const traslatey = scrolly * 0.6
+
+    document.querySelector(".cohete").style.transform = `translate(0%, calc(-700% + ${traslatey}px))`
+})
