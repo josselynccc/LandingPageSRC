@@ -4,11 +4,23 @@
     color: $text-color;
     text-align: center;
 }
+.sectionDocente{
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+    @include from (l){
+        margin-bottom: 15em;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+}
 .carousel{
-    margin-left: 42%;
-    width: 300px;
+    width:250px;
     height: 300px;
-    perspective: 800px;
+    perspective: 120px;
 
     &-content{
         position: absolute;
@@ -31,7 +43,7 @@
         .info{
             border-radius: 5px;
             color: $text-color;
-            background-color: rgba(235, 232, 232, 0.708);
+            background: linear-gradient(#f8f3ca,#eacb92,#bd9c7b);
         }
     }
 
@@ -55,6 +67,58 @@
     }
     &-item7{
         transform:rotateY(360deg) translateZ(500PX);
+    }
+
+    @include from (sm){
+        width: 500px;
+        height: 300px;
+        perspective: 800px;
+
+        &-content{
+            position: absolute;
+            width: 100%;
+            transform: translateZ(-500px) rotateY(0);
+            transform-style: preserve-3d;
+            animation: carousel 30s infinite cubic-bezier(1,0.015,0.295,1.125) forwards;
+        }
+        &-item{
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            -webkit-box-reflect: below 0px linear-gradient(transparent, transparent);
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .info{
+                border-radius: 5px;
+                color: $text-color;
+            }
+        }
+
+        &-item1{
+            transform:rotateY(0) translateZ(500PX);
+        }
+        &-item2{
+            transform:rotateY(60deg) translateZ(500PX);
+        }
+        &-item3{
+            transform:rotateY(120deg) translateZ(500PX);
+        }
+        &-item4{
+            transform:rotateY(180deg) translateZ(500PX);
+        }
+        &-item5{
+            transform:rotateY(240deg) translateZ(500PX);
+        }
+        &-item6{
+            transform:rotateY(300deg) translateZ(500PX);
+        }
+        &-item7{
+            transform:rotateY(360deg) translateZ(500PX);
+        }
     }
 }
 

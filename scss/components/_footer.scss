@@ -9,20 +9,41 @@
 }
 
 .main-footer-content{
-    padding-left: 6em;
-    padding-right: 6em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    gap: 4em;
-    margin-top: -4em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1em;
     //background: linear-gradient(#704b26,#966c42,#f8f3ca);
     background: linear-gradient(#f8f3ca,#966c42,#704b26);
 
     &-colegio{
-        padding-top:3em;
+        display: flex;
+        flex-direction: row;
+
+        img{
+            max-width: 100px;
+        }
     }
     &-direccion{
         padding-top:3em;
+    }
+
+    @include from (l){
+        padding-left: 6em;
+        padding-right: 6em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 4em;
+        margin-top: -4em;
+        //background: linear-gradient(#704b26,#966c42,#f8f3ca);
+        background: linear-gradient(#f8f3ca,#966c42,#704b26);
+
+        &-colegio{
+            padding-top:3em;
+        }
+        &-direccion{
+            padding-top:3em;
+        }
     }
 }
 

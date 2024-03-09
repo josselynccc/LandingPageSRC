@@ -9,5 +9,8 @@
     "build": "node-sass scss -o css && copy index.js dist && copy index.html dist && copy css\\styles.css dist"
   },
   "author": "Jcortez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^11.0.6"
+  }
 }
