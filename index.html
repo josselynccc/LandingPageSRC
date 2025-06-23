@@ -6,8 +6,6 @@
     <title>Responsive web</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -95,7 +93,7 @@
         </section>
 
         <section class="Container-Slider">
-            <div class="btn-left"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-left.png" alt="circled-chevron-left"/> </div>
+            <div class="btn-left"><img width="50" height="50" src="./img/icons8-izquierda-50.png" alt="circled-chevron-left"/> </div>
             <div class="slider">
                 <div class="slider--content">
                     <div class="slider--section">
@@ -116,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-right"> <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-right.png" alt="circled-chevron-right"/> </div>
+            <div class="btn-right"> <img width="50" height="50" src="./img/icons8-derecha-64.png" alt="circled-chevron-right"/> </div>
         </section>
 
         <!-- Tutors -->
@@ -185,37 +183,69 @@
             <div class="contactoForm --z-back l-container">
                 <p><span class="sub">CONTA</span>CTANOS</p>
                 <img src="./img/escuela.gif">
-                <form class="l-form" action="">
-                    <img src="./img/usuario.png" alt="">
-                    <input type="text" name="" id="" value="Nombre Completo"> <br>
-                    <img src="./img/email.png" alt="">
-                    <input type="email" name="" id="" value="Email"> <br>
-                    <img src="./img/celular.png" alt="">
-                    <input type="telefono" name="" id="" value="Celular"> <br>
-                    <img src="./img/grado.png" alt="">
-                    <select> 
-                        <option value="">Grado de estudios del menor</option>
+                <form class="l-form" action="" method="GET">
+                    <div class="l-form-info-usuario">
+                        <img src="./img/usuario.png" alt="">
+                        <p>Nombre Completo</p>
+                    </div>
+                    <input type="text" name="nombre" class="inputNombre">
+
+                    <div class="l-form-info-email">
+                        <img src="./img/email.png" alt="">
+                        <p>Email</p>
+                    </div>
+                    <input type="email" name="Email" class="inputEmail">
+
+                    <div class="l-form-info-celular">
+                        <img src="./img/celular.png" alt="">
+                        <p>Celular</p>
+                    </div>
+                    <input type="tel" name="Celular" class="inputCel">
+
+                    <div class="l-form-info-grado">
+                        <img src="./img/grado.png" alt="">
+                        <p>Grado de estudios del menor</p>
+                    </div>
+                    <select class="inputS"> 
+                        <option value=""></option>
                         <option value="">Inicial</option>
                         <option value="">Primaria</option>
                         <option value="">Secundaria</option>
-                    </select> <br>
-                    <img src="./img/mensaje.png" alt="">
-                    <textarea rows="5" cols="30">Escriba aquí su mensaje</textarea> <br>
+                    </select>
+
+                    <div class="l-form-info-mensaje">
+                        <img src="./img/mensaje.png" alt="">
+                        <p>Mensaje</p>
+                    </div>
+                    
+                    <textarea rows="5" cols="30" class="inputM"></textarea> <br>
                     <button>ENVIAR WHATSAPP</button>
                 </form>
             </div>
-            <div class="contactoFace">
-                <p>
-                <span class="sub">SIGU</span>ENOS EN:</p>
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D763826413679961%26set%3Da.763826423679960&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"  allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="contactoFace" id="facebookEmbed">
+                <p><span class="sub">SIGU</span>ENOS EN:</p>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0NxyFNWpXnARTTmrgNqy8wYSLg2DNjnwrA85599tX34VPX6brx2fEKT3igNWRMUDrl%26id%3D61554140917482&show_text=true&width=500" width="500" height="667" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
+
         </section>
 
-        <section class="center-block center-content">
+        <!-- <section class="center-block center-content">
                 <h1 style="color: #704b26;">¿DÓNDE NOS ENCONTRAMOS?</h1>
                 <p style="font-size: 20px;">Av. Los Canarios Mz. O2 Lt. 5 Urb. El Club Huachipa</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.4926717954!2d-76.9473371!3d-12.0178105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c4392c4ac1df%3A0x7f4214e30bee4f00!2sIEP%20Santa%20Rita%20de%20Casia!5e0!3m2!1ses-419!2spe!4v1702481136593!5m2!1ses-419!2spe" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.3708540322236!2d-76.9496036253665!3d-12.017970088216583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c4392c4ac1df%3A0x7f4214e30bee4f00!2sIEP%20Santa%20Rita%20de%20Casia!5e0!3m2!1ses-419!2spe!4v1750122489041!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section> -->
+        <section>
+            <iframe 
+                width="1000" 
+                height="450" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-76.9492,-12.0192,-76.9448,-12.0160&layer=mapnik&marker=-12.0178,-76.9470">
+                </iframe>
         </section>
+        
     </main>
 
     <footer class="main-footer ">
@@ -235,6 +265,12 @@
                 <p>Av. Los Canarios Mz. O2 Lt. 5 Urb. El Club Huachipa</p>
                 <p>Celular: </p>
                 <p>+51 999-999-999</p>
+            </div>
+            <div class="main-footer-content-direccion">
+                <p>santaRC@colegio.gob.pe</p>
+                <p>Kaya@colegio.gob.pe</p>
+                <p>Horario de atención: </p>
+                <p>de lunes a viernes de 8:30 a. m. a 5:00 p. m.</p>
             </div>
         </div>
         

@@ -1,5 +1,5 @@
 .main-menu{
-    
+    background-color: #94704c;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
@@ -7,7 +7,7 @@
     
     @include from(l){
         display: flex;
-        background-color: #f8f3ca;
+        background-color: #94704c;
     }
 }
 .main-menu-item{
@@ -16,13 +16,15 @@
     
     :hover{
         color: #ff9100;
+        text-decoration: underline;
+        text-decoration-thickness: 0.2em;
     }
 }
 .main-menu-link{
     color: #f8f3ca;
     margin-bottom: 2px;
     @include from(l){
-        color:$text-color;
+        color: #f8f3ca;
     }
 }
 
@@ -34,7 +36,7 @@
     top: $header-hight;
     right: -100vh;
     transition: right .5s;
-    background-color: #3c3737;
+    background-color: #94704c;
     z-index: var(--z-fixed);
 
     @include from(l){
@@ -43,6 +45,8 @@
         padding-top: 0;
         height: auto;
         width: auto;
+        border: 0;
+        margin: 0;
     }
 
     &.show{
@@ -54,5 +58,9 @@
     width: 3rem;
     @include from(l){
         visibility: hidden;
+    }
+
+    button{
+        background-color: #94704c;
     }
 }

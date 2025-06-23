@@ -84,14 +84,31 @@
 
 }
 .l-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center; 
 
-    img{
-        z-index: 10;
-        position: absolute;
-        width: 15px;
+    &-info-usuario, &-info-email, &-info-celular, &-info-grado, &-info-mensaje{
+        height: 10px;
+        z-index: var(--z-normal);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        bottom: -20px;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+        p{
+            font-size: 15px;
+            color: #ffffff;
+        }
     }
+
     input{
         text-align: center;
         padding: 0.5em;
@@ -103,10 +120,11 @@
         outline: none;
         background-color: #c66446;
         border-radius: 10px;
-        border-bottom: 3px solid #ffffff;
-        border-right: 3px solid #ffffff;
+        border-bottom: 3px solid #aea5a5;
+        border-right: 3px solid #aea5a5;
     }
     select{
+        width: 250px;
         padding: 0.5em;
         color: #ffffff;
         font-family: sans-serif;
@@ -116,8 +134,8 @@
         outline: none;
         background-color: #c66446;
         border-radius: 10px;
-        border-bottom: 3px solid #ffffff;
-        border-right: 3px solid #ffffff;
+        border-bottom: 3px solid #aea5a5;
+        border-right: 3px solid #aea5a5;
         transition: all 1s ease;
     }
 
@@ -130,8 +148,8 @@
         outline: none;
         background-color: #c66446;
         border-radius: 10px;
-        border-bottom: 3px solid #ffffff;
-        border-right: 3px solid #ffffff;
+        border-bottom: 3px solid #aea5a5;
+        border-right: 3px solid #aea5a5;
     }
 
     button{

@@ -1,12 +1,18 @@
 .main-header{
+    background-color: #94704c;
     width: 100%;
     position:fixed;
-    background-color: #f8f3ca;
+    // background-color: #f8f3ca;
     z-index: var(--z-fixed);
     top: 0;
     left: 0;
     height: $header-hight;
     border-bottom: 1px solid $border-color;
+    transition: opacity 0.3s ease;
+}
+
+.main-header-transparent{
+    opacity: 0.8;
 }
 
 
